@@ -7,11 +7,12 @@ import hocExample from '../src/hoc/example';
 const App = () => {
 
   const NewComponent = hocExample(HelloWorld);
+  const property = 'props man'
 
   return (
     <div className="App">
       Hello world!
-      <NewComponent />
+      <NewComponent property={property} />
     </div>
   );
 }

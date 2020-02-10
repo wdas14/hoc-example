@@ -1,7 +1,12 @@
 import React from 'react';
 
-const HelloWorld = () => {
-    return <div>Hello world, again!</div>
+const HelloWorld = props => {
+    return (
+        <div>
+            <div>Hello world, again!</div>
+            <div>We are passing through {props.property}</div>
+        </div>
+    )
 }
 
 export default HelloWorld;
