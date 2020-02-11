@@ -1,8 +1,9 @@
 import React from 'react';
 import './App.css';
 
-import HelloWorld from '../src/components/HelloWorld';
 import hocExample from '../src/hoc/example';
+import HelloWorld from '../src/components/HelloWorld';
+import DataComponent from '../src/components/DataComponent';
 
 const App = () => {
 
@@ -13,6 +14,7 @@ const App = () => {
     <div className="App">
       Hello world!
       <NewComponent property={property} />
+      <DataComponent />
     </div>
   );
 }
